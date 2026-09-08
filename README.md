@@ -1,27 +1,45 @@
 # OSS contribution log
 
-This repo tracks paid open-source work submitted as **GitHub `@Flame119052`**. Outreach uses AgentMail `flame-oss@agentmail.to` (display: OSS contributions). Personal Gmail is only for inbound notices.
+This repo tracks paid open-source work submitted as GitHub `@Flame119052`.
+Outreach uses AgentMail `flame-oss@agentmail.to` (display: OSS contributions).
+Personal Gmail is inbound only.
 
 ## $200 target
 
-Halt only after **$200 USD or INR equivalent** is verified on UPI / PayPal / Algora / GitHub Sponsors. The public Algora “open” list is 10 stale farm tickets (dsn-converter#54 has 236 claims; jlcsearch#92 is $1). Real money on tscircuit is **merged high-impact PRs** plus weekly contribution-tracker sponsorship (requires GitHub Sponsors on Flame119052) or a maintainer Algora tip. Do not file thousands of fake bounty issues.
+Halt only after **$200 USD or INR equivalent** is verified on UPI, PayPal,
+Algora, or Superteam USDC. GitHub Sponsors is out. The public Algora "open"
+list is stale farm tickets. Real money is a merged high-impact PR plus a
+maintainer Algora `/tip` or private UPI.
 
-## Active
+Do not file thousands of fake bounty issues.
 
-- [tscircuit/spicets#29](https://github.com/tscircuit/spicets/pull/29) — parser/pretty-print: transients, option flags, quoted library paths, BJT params, diode area/`OFF`. CI green (format, typecheck, tests).
-- [tscircuit/easyeda-converter#551](https://github.com/tscircuit/easyeda-converter/pull/551) — valid JSX for footprint text that contains quotes or HTML entities (`#550`).
-- [tscircuit/schematic-trace-solver#1098](https://github.com/tscircuit/schematic-trace-solver/pull/1098) — orthogonalize net-label recovery traces (`#1096`).
-- [tscircuit/tscircuit-autorouter#2462](https://github.com/tscircuit/tscircuit-autorouter/pull/2462) — Solver7 fail-closed on same-layer shorts (`#1964`) and overlapping different-net via pads (`#2147`). CI green.
-- [tscircuit/tscircuit-autorouter#2463](https://github.com/tscircuit/tscircuit-autorouter/pull/2463) — keep the widest `nominalTraceWidth` when merging connections (`#1721`). CI green.
-- [tscircuit/core#3743](https://github.com/tscircuit/core/pull/3743) — default 4-pin pushbutton internal connections (`#3115`). Only applied when pin1–pin4 exist so KiCad repeated-pad SPST footprints keep inferred internals.
-- [tscircuit/core#3744](https://github.com/tscircuit/core/pull/3744) — send unbroken copper-pour Simple Route JSON on raw remote autorouting paths (`#3379`). Job mode and the legacy solve endpoint now include `input_simple_route_json` built from the live subcircuit, because Circuit JSON assembled during `PcbTraceRender` has no pour-intent field yet.
-- [tscircuit/docs#873](https://github.com/tscircuit/docs/pull/873) — document compact `schSize` (`sm`/`xs`), `<netlabel inline />`, and `schPinLabelFontSize` (part of Seve’s `#849`; replaces stale `#856`).
-- [tscircuit/tscircuit-autorouter#2464](https://github.com/tscircuit/tscircuit-autorouter/pull/2464) — `validateSimpleRouteJsonOutput` for custom post-processing via/pad DRC (`#2058`). Catch vias shifted into a neighboring pad after `getOutputSimpleRouteJson()`.
+## Payout rails (private)
+
+1. UPI VPA in private maintainer mail only. Never in public PRs, issues, or git.
+2. PayPal through Algora when a maintainer `/tip`s or awards a bounty on a merged PR.
+3. Superteam Earn USDC if a live AGENT_ALLOWED coding listing exists. Current live agent listings have winners announced.
+
+Connect PayPal at https://console.algora.io as `@Flame119052`.
+
+## Active PRs
+
+- [tscircuit/spicets#29](https://github.com/tscircuit/spicets/pull/29) parser and pretty-print. CI green. Seve mailed once. No second copy.
+- [tscircuit/easyeda-converter#551](https://github.com/tscircuit/easyeda-converter/pull/551) JSX text escaping (`#550`).
+- [tscircuit/schematic-trace-solver#1098](https://github.com/tscircuit/schematic-trace-solver/pull/1098) orthogonal net-label traces.
+- [tscircuit/tscircuit-autorouter#2462](https://github.com/tscircuit/tscircuit-autorouter/pull/2462) fail-closed same-layer shorts (`#1964`, `#2147`).
+- [tscircuit/tscircuit-autorouter#2463](https://github.com/tscircuit/tscircuit-autorouter/pull/2463) keep widest trace width (`#1721`).
+- [tscircuit/tscircuit-autorouter#2464](https://github.com/tscircuit/tscircuit-autorouter/pull/2464) via/pad output DRC (`#2058`).
+- [tscircuit/core#3743](https://github.com/tscircuit/core/pull/3743) default 4-pin pushbutton internals (`#3115`).
+- [tscircuit/core#3744](https://github.com/tscircuit/core/pull/3744) unbroken copper-pour Simple Route JSON (`#3379`).
+- [tscircuit/core#3746](https://github.com/tscircuit/core/pull/3746) per-side board finish and assembly on `pcb_board` (`#3101`). Companion [circuit-json#766](https://github.com/tscircuit/circuit-json/pull/766).
+- [tscircuit/docs#873](https://github.com/tscircuit/docs/pull/873) compact `schSize`, inline netlabels (part of Seve `#849`, replaces `#856`).
 
 ## Mail
 
-When mail is sent, this agent **checks the inbox for a reply** before sending again. Seve was emailed once about spicets #29; no second copy until he answers.
+Check both `flame-oss@agentmail.to` and `krishay-oss@agentmail.to` before sending.
+Seve was emailed once about spicets #29. Do not send a second copy until he answers.
 
 ## Local
 
-Paid patches live in upstream forks, not in this tree. Clone the upstream repo, run its own `bun test` / `bun run format`.
+Paid patches live in upstream forks, not in this tree.
+Clone the upstream repo and run its own `bun test` / `bun run format`.
