@@ -8,6 +8,7 @@ This repo tracks paid open-source work submitted as **GitHub `@Flame119052`**. O
 - [tscircuit/easyeda-converter#551](https://github.com/tscircuit/easyeda-converter/pull/551) — valid JSX for footprint text that contains quotes or HTML entities (`#550`).
 - [tscircuit/schematic-trace-solver#1098](https://github.com/tscircuit/schematic-trace-solver/pull/1098) — orthogonalize net-label recovery traces (`#1096`).
 - [tscircuit/tscircuit-autorouter#2462](https://github.com/tscircuit/tscircuit-autorouter/pull/2462) — Solver7 fail-closed on same-layer different-connection shorts (`#1964`).
+- [tscircuit/tscircuit-autorouter#2463](https://github.com/tscircuit/tscircuit-autorouter/pull/2463) — keep the widest `nominalTraceWidth` when merging connections (`#1721`).
 
 ## Mail
 
