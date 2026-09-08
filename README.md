@@ -1,48 +1,57 @@
-# OSS contribution log
+# Cookie Desk
 
-This repo tracks paid open-source work submitted as GitHub `@Flame119052`.
-Outreach uses AgentMail `flame-oss@agentmail.to` (display: OSS contributions).
-Personal Gmail is inbound only.
+Operator desk for **Cookie Chain**: live cluster stats, Nightly wallet connect,
+DAS holdings, and COOK transfers with confirmed status.
 
-## $200 target
+Built as a Superteam Earn cApp (`create-an-app-on-cookie-chain-app`, $500 / $500).
+Deadline 2026-09-22. Human submission on Earn is still required.
 
-Halt only after **$200 USD or INR equivalent** is verified on UPI, PayPal,
-Algora, or Superteam USDC. GitHub Sponsors is out. The public Algora "open"
-list is stale farm tickets. Real money is a merged high-impact PR plus a
-maintainer Algora `/tip` or private UPI.
+Live RPC: `https://rpc.cookiescan.io`. DAS: `https://api.cookiescan.io`.
+Bridge COOK from Solana at [hyperlane.cookiescan.io](https://hyperlane.cookiescan.io).
 
-Do not file thousands of fake bounty issues.
+## Run locally
 
-## Payout rails (private)
+```bash
+npm install
+npm run dev
+```
 
-1. UPI VPA in private maintainer mail only. Never in public PRs, issues, or git.
-2. PayPal through Algora when a maintainer `/tip`s or awards a bounty on a merged PR.
-3. Superteam Earn USDC if a live AGENT_ALLOWED coding listing exists. Current live agent listings have winners announced.
+Opens on port **43147**. Connect [Nightly](https://nightly.app) and point it at
+the Cookie Chain RPC if it is not detected automatically.
 
-Connect PayPal at https://console.algora.io as `@Flame119052`.
+## What it does
 
-## Active PRs
+- Reads slot, epoch, COOK supply, and the validator set from the community RPC
+- Connects Nightly (required) or Phantom
+- Shows native COOK balance and Metaplex DAS assets
+- Sends a native COOK transfer plus an optional memo, then waits for confirmation
+- Empty, loading, and RPC-error states on the cluster panel
 
-- [tscircuit/spicets#29](https://github.com/tscircuit/spicets/pull/29) parser and pretty-print. CI green. Seve mailed once. No second copy.
-- [tscircuit/easyeda-converter#551](https://github.com/tscircuit/easyeda-converter/pull/551) JSX text escaping (`#550`).
-- [tscircuit/schematic-trace-solver#1098](https://github.com/tscircuit/schematic-trace-solver/pull/1098) orthogonal net-label traces.
-- [tscircuit/tscircuit-autorouter#2462](https://github.com/tscircuit/tscircuit-autorouter/pull/2462) fail-closed same-layer shorts (`#1964`, `#2147`).
-- [tscircuit/tscircuit-autorouter#2463](https://github.com/tscircuit/tscircuit-autorouter/pull/2463) keep widest trace width (`#1721`).
-- [tscircuit/tscircuit-autorouter#2464](https://github.com/tscircuit/tscircuit-autorouter/pull/2464) via/pad output DRC (`#2058`).
-- [tscircuit/core#3743](https://github.com/tscircuit/core/pull/3743) default 4-pin pushbutton internals (`#3115`).
-- [tscircuit/core#3744](https://github.com/tscircuit/core/pull/3744) unbroken copper-pour Simple Route JSON (`#3379`).
-- [tscircuit/core#3746](https://github.com/tscircuit/core/pull/3746) per-side board finish and assembly on `pcb_board` (`#3101`). Companion [circuit-json#766](https://github.com/tscircuit/circuit-json/pull/766).
-- [tscircuit/docs#873](https://github.com/tscircuit/docs/pull/873) compact `schSize`, inline netlabels (part of Seve `#849`, replaces `#856`).
-- [tscircuit/docs#874](https://github.com/tscircuit/docs/pull/874) pin-header mating-side aliases (part of Seve `#849`, replaces `#854`).
-- [tscircuit/docs#875](https://github.com/tscircuit/docs/pull/875) `fanoutMargin`, edge-first fanout names, and singleton buses (part of Seve `#849`, replaces `#857`).
-- [tscircuit/pcb-viewer#987](https://github.com/tscircuit/pcb-viewer/pull/987) plated-hole and via copper only on matching layers (Seve `#696`).
+No secrets. Optional env:
 
-## Mail
+```
+COOKIE_RPC_URL=https://rpc.cookiescan.io
+COOKIE_DAS_URL=https://api.cookiescan.io
+```
 
-Check both `flame-oss@agentmail.to` and `krishay-oss@agentmail.to` before sending.
-Seve was emailed once about spicets #29. Do not send a second copy until he answers.
+## Superteam submit (human)
 
-## Local
+Submit this repo plus the live URL on **Create an App on Cookie Chain**.
+Post an X thread that shows wallet connect, a confirmed transfer, and the
+Cookie Chain bridge, then share it in the Cookie Chain Telegram.
 
-Paid patches live in upstream forks, not in this tree.
-Clone the upstream repo and run its own `bun test` / `bun run format`.
+The agent claim page was mailed separately. Do not paste payout details into
+public PRs or this README.
+
+## OSS log (parallel)
+
+Paid tscircuit work is submitted as GitHub `@Flame119052`. Outreach uses
+AgentMail `flame-oss@agentmail.to`. GitHub Sponsors is out. Halt the $200
+goal only after verified UPI / PayPal / Algora / Superteam USDC.
+
+Active PRs include spicets#29, easyeda-converter#551, schematic-trace-solver#1098,
+autorouter#2462–2464, core#3743/#3744/#3746, circuit-json#766/#767,
+docs#873–875, pcb-viewer#987.
+
+Seve was emailed once about spicets#29. Do not send a second copy until he answers.
+Never put a UPI VPA in public PRs.
