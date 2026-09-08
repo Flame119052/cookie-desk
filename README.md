@@ -6,6 +6,9 @@ DAS holdings, and COOK transfers with confirmed status.
 Built as a Superteam Earn cApp (`create-an-app-on-cookie-chain-app`, $500 / $500).
 Deadline 2026-09-22. Human submission on Earn is still required.
 
+Live app: https://cookie-desk.vercel.app
+Source: https://github.com/Flame119052/cookie-desk
+
 Live RPC: `https://rpc.cookiescan.io`. DAS: `https://api.cookiescan.io`.
 Bridge COOK from Solana at [hyperlane.cookiescan.io](https://hyperlane.cookiescan.io).
 
