@@ -85,7 +85,8 @@ circuit-json-to-dsn#15 (pill/polygon plated-hole pads emit DSN padstacks instead
 circuit-json-to-gltf#193 (rotated pill plated-hole drills cut as pills, not circles from `hole_diameter`),
 circuit-json-to-footprinter#111 (`hole_with_polygon_pad` outlines and drill offsets honor `ccw_rotation`),
 circuit-json-to-step#130 (pill/polygon/rect-pad plated holes cut STEP drills instead of leaving solid copper),
-circuit-json-to-easyeda#1 (pcb_cutout circle/rect/polygon export as HOLE or SOLIDREGION cutouts).
+circuit-json-to-easyeda#1 (pcb_cutout circle/rect/polygon export as HOLE or SOLIDREGION cutouts),
+kicad-to-circuit-json#186 (KiCad `(drill (offset …))` maps to plated-hole `hole_offset` and NPTH centers).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
