@@ -61,7 +61,8 @@ Active PRs include spicets#29, easyeda-converter#551, schematic-trace-solver#109
 autorouter#2462–2464, core#3743/#3744/#3746/#3750–3764/#3766–3769,
 circuit-json#766/#767/#768, docs#873–875, pcb-viewer#987, props#832–834,
 image-utils#42 (PNG alpha comparison), calculate-packing#131,
-simple-3d-svg#79 (RBush polygon visibility culling for #38).
+simple-3d-svg#79 (RBush polygon visibility culling for #38),
+simple-3d-svg#80 (jscadObjects via jscad-planner for #2).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
