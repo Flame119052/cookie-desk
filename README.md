@@ -1,6 +1,10 @@
 # OSS contribution log
 
-This repo tracks paid open-source work submitted as **GitHub `@Flame119052`**. Outreach uses AgentMail (`krishay-oss@agentmail.to`). Personal Gmail is only for inbound notices.
+This repo tracks paid open-source work submitted as **GitHub `@Flame119052`**. Outreach uses AgentMail `flame-oss@agentmail.to` (display: OSS contributions). Personal Gmail is only for inbound notices.
+
+## $200 target
+
+Halt only after **$200 USD or INR equivalent** is verified on UPI / PayPal / Algora / GitHub Sponsors. The public Algora “open” list is 10 stale farm tickets (dsn-converter#54 has 236 claims; jlcsearch#92 is $1). Real money on tscircuit is **merged high-impact PRs** plus weekly contribution-tracker sponsorship (requires GitHub Sponsors on Flame119052) or a maintainer Algora tip. Do not file thousands of fake bounty issues.
 
 ## Active
 
