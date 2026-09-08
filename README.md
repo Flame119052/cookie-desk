@@ -71,7 +71,8 @@ solver-utils#42 (download templates spread getConstructorParams tuples; #39),
 3d-viewer#990 (JSCAD camera frames the panel, not the first child board; #584),
 3d-viewer#991 (plated-hole copper paints above soldermask on board textures; circuit-json-to-gltf#72),
 autorouter#2472 (`allowBlindAndBuriedVias: false` emits full-stack PTH vias; 0hmX #2156),
-3d-viewer#992 (RGB X/Y/Z arrows on the top-left orientation cube; Seve #27).
+3d-viewer#992 (RGB X/Y/Z arrows on the top-left orientation cube; Seve #27),
+solver-utils#45 (`tryFinalAcceptance` exceptions fail the solver like `_step`; #44).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
