@@ -88,7 +88,9 @@ circuit-json-to-step#130 (pill/polygon/rect-pad plated holes cut STEP drills ins
 circuit-json-to-easyeda#1 (pcb_cutout circle/rect/polygon export as HOLE or SOLIDREGION cutouts),
 kicad-to-circuit-json#186 (KiCad `(drill (offset …))` maps to plated-hole `hole_offset` and NPTH centers),
 easyedats#7 (PCB RECT SVG uses layer/stroke fields instead of swapping them),
-stepts#20 (STEP tokenizer no longer ends entities at `;` inside STRING values or `/* comments */`).
+stepts#20 (STEP tokenizer no longer ends entities at `;` inside STRING values or `/* comments */`),
+eval#4446 (`package.json` `exports` string shorthand and fallback arrays resolve instead of falling through to `index.js`),
+circuit-json-to-geometry#3 (circle/rotated_rect/pill/polygon SMT pads emit copper; `hole_with_polygon_pad` local outlines honor `ccw_rotation`).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
