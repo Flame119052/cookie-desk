@@ -95,7 +95,8 @@ kicadts#70 (`kicad_sch` parses `bus`/`bus_entry` instead of throwing),
 circuit-json-to-simple-3d#14 (UTF-8 base64 board-face SVG so Ω/CJK silkscreen no longer throws),
 circuit-json-to-simple-route-json#1 (keepout `outline` and `layers: ["all"]` become autorouter obstacles; polygon pads honor `ccw_rotation`),
 lbrnts#44 (`Shape Type="Polygon"` parses and renders instead of throwing),
-gerberts#2 (explicit decimal Gerber coordinates like `X1.27Y0.635D03` parse as operations, not UnknownCommand).
+gerberts#2 (explicit decimal Gerber coordinates like `X1.27Y0.635D03` parse as operations, not UnknownCommand),
+pads-to-circuit-json#2 (closed PADS polygon keepouts emit `pcb_keepout` `shape: "outline"` instead of being dropped).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
