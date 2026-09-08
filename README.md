@@ -65,7 +65,9 @@ simple-3d-svg#79 (RBush polygon visibility culling for #38),
 simple-3d-svg#80 (jscadObjects via jscad-planner for #2),
 core#3774 (diode `variant` enum selects the matching schematic symbol),
 core#3776 (pinheader schematic `port_arrangement` emits numeric pins for #3075),
-3d-viewer#989 (panel CAD sits on the copper surface instead of the mesh midplane; #612).
+3d-viewer#989 (panel CAD sits on the copper surface instead of the mesh midplane; #612),
+solver-utils#41 (pipeline output queries ignore inherited Object keys; #40),
+solver-utils#42 (download templates spread getConstructorParams tuples; #39).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
