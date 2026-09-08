@@ -59,7 +59,7 @@ Payout rails (never in public PRs or git):
 
 Active PRs include spicets#29, easyeda-converter#551, schematic-trace-solver#1098,
 autorouter#2462–2464, core#3743/#3744/#3746, circuit-json#766/#767,
-docs#873–875, pcb-viewer#987.
+docs#873–875, pcb-viewer#987, props#832 (capacitor spec props, core#3109).
 
 Seve was emailed once about spicets#29. Do not send a second copy until he answers.
 Never put a UPI VPA in public PRs.
