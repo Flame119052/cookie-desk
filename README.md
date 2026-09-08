@@ -54,13 +54,14 @@ goal only after verified settlement.
 
 Payout rails (never in public PRs or git):
 - INR up to ₹5000: UPI
-- INR above ₹5000: ICICI Pockets via NEFT (not UPI, not the Visa card number)
-- USD: Algora PayPal/Stripe or Superteam USDC. Those skip the UPI cap.
+- INR above ₹5000: ICICI Pockets NEFT (not UPI, not the Visa card number)
+- No PayPal. Superteam USDC still works if a listing pays.
 
 Active PRs include spicets#29, easyeda-converter#551, schematic-trace-solver#1098,
-autorouter#2462–2464, core#3743/#3744/#3746, circuit-json#766/#767,
-docs#873–875, pcb-viewer#987, props#832 (capacitor specs, core#3109),
-props#833 (resistor ratings, core#3105).
+autorouter#2462–2464, core#3743/#3744/#3746/#3750–3764/#3766–3768,
+circuit-json#766/#767/#768, docs#873–875, pcb-viewer#987, props#832–834.
+core#3768 adds a `require` export so stale CJS registry packages can load core
+(tscircuit/cli#3982).
 
 Seve was emailed once about spicets#29. Do not send a second copy until he answers.
 Never put a UPI VPA in public PRs.
