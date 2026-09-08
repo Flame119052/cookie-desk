@@ -59,7 +59,8 @@ Payout rails (never in public PRs or git):
 
 Active PRs include spicets#29, easyeda-converter#551, schematic-trace-solver#1098,
 autorouter#2462–2464, core#3743/#3744/#3746/#3750–3764/#3766–3769,
-circuit-json#766/#767/#768, docs#873–875, pcb-viewer#987, props#832–834.
+circuit-json#766/#767/#768, docs#873–875, pcb-viewer#987, props#832–834,
+image-utils#42 (PNG alpha comparison).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
