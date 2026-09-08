@@ -5,7 +5,8 @@ This repo tracks paid open-source work submitted as **GitHub `@Flame119052`**. O
 ## Active
 
 - [tscircuit/spicets#29](https://github.com/tscircuit/spicets/pull/29) — parser/pretty-print: transients, option flags, quoted library paths, BJT params, diode area/`OFF`. CI green (format, typecheck, tests).
-- [tscircuit/easyeda-converter](https://github.com/tscircuit/easyeda-converter) — valid JSX for footprint text that contains quotes or HTML entities (`#550`).
+- [tscircuit/easyeda-converter#551](https://github.com/tscircuit/easyeda-converter/pull/551) — valid JSX for footprint text that contains quotes or HTML entities (`#550`).
+- [tscircuit/schematic-trace-solver](https://github.com/tscircuit/schematic-trace-solver) — orthogonalize net-label recovery traces (`#1096`).
 
 ## Mail
 
