@@ -50,7 +50,12 @@ public PRs or this README.
 
 Paid tscircuit work is submitted as GitHub `@Flame119052`. Outreach uses
 AgentMail `flame-oss@agentmail.to`. GitHub Sponsors is out. Halt the $200
-goal only after verified UPI / PayPal / Algora / Superteam USDC.
+goal only after verified settlement.
+
+Payout rails (never in public PRs or git):
+- INR up to ₹5000: UPI
+- INR above ₹5000: ICICI Pockets via NEFT (not UPI, not the Visa card number)
+- USD: Algora PayPal/Stripe or Superteam USDC. Those skip the UPI cap.
 
 Active PRs include spicets#29, easyeda-converter#551, schematic-trace-solver#1098,
 autorouter#2462–2464, core#3743/#3744/#3746, circuit-json#766/#767,
