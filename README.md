@@ -96,7 +96,9 @@ circuit-json-to-simple-3d#14 (UTF-8 base64 board-face SVG so Ω/CJK silkscreen n
 circuit-json-to-simple-route-json#1 (keepout `outline` and `layers: ["all"]` become autorouter obstacles; polygon pads honor `ccw_rotation`),
 lbrnts#44 (`Shape Type="Polygon"` parses and renders instead of throwing),
 gerberts#2 (explicit decimal Gerber coordinates like `X1.27Y0.635D03` parse as operations, not UnknownCommand),
-pads-to-circuit-json#2 (closed PADS polygon keepouts emit `pcb_keepout` `shape: "outline"` instead of being dropped).
+pads-to-circuit-json#2 (closed PADS polygon keepouts emit `pcb_keepout` `shape: "outline"` instead of being dropped),
+dsn-to-circuit-json#22 (DSN padstack polygons emit `pcb_smtpad` `shape: "polygon"` instead of a bounding-box rect),
+gltf-slice#5 (`TRIANGLE_STRIP`/`TRIANGLE_FAN` meshes are sliced instead of cloned unsliced).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
