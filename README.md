@@ -63,7 +63,8 @@ circuit-json#766/#767/#768, docs#873–875, pcb-viewer#987, props#832–834,
 image-utils#42 (PNG alpha comparison), calculate-packing#131,
 simple-3d-svg#79 (RBush polygon visibility culling for #38),
 simple-3d-svg#80 (jscadObjects via jscad-planner for #2),
-core#3774 (diode `variant` enum selects the matching schematic symbol).
+core#3774 (diode `variant` enum selects the matching schematic symbol),
+core#3776 (pinheader schematic `port_arrangement` emits numeric pins for #3075).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
