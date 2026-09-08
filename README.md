@@ -92,7 +92,8 @@ stepts#20 (STEP tokenizer no longer ends entities at `;` inside STRING values or
 eval#4446 (`package.json` `exports` string shorthand and fallback arrays resolve instead of falling through to `index.js`),
 circuit-json-to-geometry#3 (circle/rotated_rect/pill/polygon SMT pads emit copper; `hole_with_polygon_pad` local outlines honor `ccw_rotation`),
 kicadts#70 (`kicad_sch` parses `bus`/`bus_entry` instead of throwing),
-circuit-json-to-simple-3d#14 (UTF-8 base64 board-face SVG so Ω/CJK silkscreen no longer throws).
+circuit-json-to-simple-3d#14 (UTF-8 base64 board-face SVG so Ω/CJK silkscreen no longer throws),
+circuit-json-to-simple-route-json#1 (keepout `outline` and `layers: ["all"]` become autorouter obstacles; polygon pads honor `ccw_rotation`).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
