@@ -59,7 +59,7 @@ Payout rails (never in public PRs or git):
 
 Active PRs include spicets#29, easyeda-converter#551, schematic-trace-solver#1098,
 autorouter#2462–2464, core#3743/#3744/#3746/#3750–3764/#3766–3769,
-circuit-json#766/#767/#768, docs#873–875, pcb-viewer#987, props#832–834,
+circuit-json#766/#767/#768, docs#873–875, pcb-viewer#987/#990, props#832–834,
 image-utils#42 (PNG alpha comparison), calculate-packing#131,
 simple-3d-svg#79 (RBush polygon visibility culling for #38),
 simple-3d-svg#80 (jscadObjects via jscad-planner for #2),
@@ -72,7 +72,8 @@ solver-utils#42 (download templates spread getConstructorParams tuples; #39),
 3d-viewer#991 (plated-hole copper paints above soldermask on board textures; circuit-json-to-gltf#72),
 autorouter#2472 (`allowBlindAndBuriedVias: false` emits full-stack PTH vias; 0hmX #2156),
 3d-viewer#992 (RGB X/Y/Z arrows on the top-left orientation cube; Seve #27),
-solver-utils#45 (`tryFinalAcceptance` exceptions fail the solver like `_step`; #44).
+solver-utils#45 (`tryFinalAcceptance` exceptions fail the solver like `_step`; #44),
+pcb-viewer#990 (View → Move Footprints after #951 removed the toolbar button; #976).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
