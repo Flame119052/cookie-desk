@@ -33,6 +33,7 @@ Connect PayPal at https://console.algora.io as `@Flame119052`.
 - [tscircuit/core#3744](https://github.com/tscircuit/core/pull/3744) unbroken copper-pour Simple Route JSON (`#3379`).
 - [tscircuit/core#3746](https://github.com/tscircuit/core/pull/3746) per-side board finish and assembly on `pcb_board` (`#3101`). Companion [circuit-json#766](https://github.com/tscircuit/circuit-json/pull/766).
 - [tscircuit/docs#873](https://github.com/tscircuit/docs/pull/873) compact `schSize`, inline netlabels (part of Seve `#849`, replaces `#856`).
+- [tscircuit/docs#874](https://github.com/tscircuit/docs/pull/874) pin-header mating-side aliases (part of Seve `#849`, replaces `#854`).
 
 ## Mail
 
