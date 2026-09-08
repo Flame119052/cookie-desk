@@ -35,6 +35,7 @@ Connect PayPal at https://console.algora.io as `@Flame119052`.
 - [tscircuit/docs#873](https://github.com/tscircuit/docs/pull/873) compact `schSize`, inline netlabels (part of Seve `#849`, replaces `#856`).
 - [tscircuit/docs#874](https://github.com/tscircuit/docs/pull/874) pin-header mating-side aliases (part of Seve `#849`, replaces `#854`).
 - [tscircuit/docs#875](https://github.com/tscircuit/docs/pull/875) `fanoutMargin`, edge-first fanout names, and singleton buses (part of Seve `#849`, replaces `#857`).
+- [tscircuit/pcb-viewer#987](https://github.com/tscircuit/pcb-viewer/pull/987) plated-hole and via copper only on matching layers (Seve `#696`).
 
 ## Mail
 
