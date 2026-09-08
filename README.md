@@ -80,7 +80,8 @@ jscad-fiber#132 (Text component from vectorText cuboid strokes; Seve #21),
 pcb-viewer#991 (Ctrl/Cmd+Z undoes the last dropped footprint move; #302),
 jscad-electronics#341 (rotated/pill SMT pads and oval/polygon plated holes no longer throw in ExtrudedPads),
 copper-pour-solver#90 (`hole_with_polygon_pad` plated holes become pour obstacles, including `ccw_rotation`),
-implicit-copper-pour-solver#12 (`hole_with_polygon_pad` outlines are translated/rotated into board space).
+implicit-copper-pour-solver#12 (`hole_with_polygon_pad` outlines are translated/rotated into board space),
+circuit-json-to-dsn#15 (pill/polygon plated-hole pads emit DSN padstacks instead of throwing).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
