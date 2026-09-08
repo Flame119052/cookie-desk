@@ -76,7 +76,8 @@ solver-utils#45 (`tryFinalAcceptance` exceptions fail the solver like `_step`; #
 pcb-viewer#990 (View → Move Footprints after #951 removed the toolbar button; #976),
 circuit-json-to-lbrn#205 (bounds include board, holes, vias, pills, polygons; #181/#191/#193/#195),
 schematic-trace-solver#1107 (isGround aliases like AGND/VSS, not only the name GND; 0hmX #747),
-jscad-fiber#132 (Text component from vectorText cuboid strokes; Seve #21).
+jscad-fiber#132 (Text component from vectorText cuboid strokes; Seve #21),
+pcb-viewer#991 (Ctrl/Cmd+Z undoes the last dropped footprint move; #302).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
