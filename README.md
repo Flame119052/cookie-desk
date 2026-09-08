@@ -15,6 +15,7 @@ Halt only after **$200 USD or INR equivalent** is verified on UPI / PayPal / Alg
 - [tscircuit/tscircuit-autorouter#2463](https://github.com/tscircuit/tscircuit-autorouter/pull/2463) — keep the widest `nominalTraceWidth` when merging connections (`#1721`). CI green.
 - [tscircuit/core#3743](https://github.com/tscircuit/core/pull/3743) — default 4-pin pushbutton internal connections (`#3115`). Only applied when pin1–pin4 exist so KiCad repeated-pad SPST footprints keep inferred internals.
 - [tscircuit/core#3744](https://github.com/tscircuit/core/pull/3744) — send unbroken copper-pour Simple Route JSON on raw remote autorouting paths (`#3379`). Job mode and the legacy solve endpoint now include `input_simple_route_json` built from the live subcircuit, because Circuit JSON assembled during `PcbTraceRender` has no pour-intent field yet.
+- [tscircuit/docs#873](https://github.com/tscircuit/docs/pull/873) — document compact `schSize` (`sm`/`xs`), `<netlabel inline />`, and `schPinLabelFontSize` (part of Seve’s `#849`; replaces stale `#856`).
 
 ## Mail
 
