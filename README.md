@@ -46,11 +46,23 @@ Cookie Chain bridge, then share it in the Cookie Chain Telegram.
 The agent claim page was mailed separately. Do not paste payout details into
 public PRs or this README.
 
+## Campaign snapshot (cancelled 2026-09-09)
+
+User cancelled the overnight earn-and-verify goal at 2026-09-09 02:25Z.
+No payment was verified. Resume from this snapshot; do not treat it as paid.
+
+- GitHub: `@Flame119052`. Mail: `flame-oss@agentmail.to` (also poll `krishay-oss@agentmail.to`).
+- Seve spicets#29 mail is still one outbound message. Do not send a second copy.
+- Zero Flame tscircuit PRs merged as of cancel.
+- Cookie Desk live: https://cookie-desk.vercel.app — Superteam listing still needs a human submit.
+- Latest PRs: route-styler#1, remove-prefab-vias#1 (missing `pcb_trace.route` skip).
+- Never put payout details in public PRs or git.
+
 ## OSS log (parallel)
 
 Paid tscircuit work is submitted as GitHub `@Flame119052`. Outreach uses
-AgentMail `flame-oss@agentmail.to`. GitHub Sponsors is out. Halt the $200
-goal only after verified settlement.
+AgentMail `flame-oss@agentmail.to`. GitHub Sponsors is out. This earn goal
+was cancelled on 2026-09-09 before any verified settlement.
 
 Payout rails (never in public PRs or git):
 - INR up to ₹5000: UPI
