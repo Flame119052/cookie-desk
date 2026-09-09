@@ -102,7 +102,8 @@ gltf-slice#5 (`TRIANGLE_STRIP`/`TRIANGLE_FAN` meshes are sliced instead of clone
 stack-svgs#1 (single-quoted SVG `id`/`href` attributes are namespaced when stacking),
 infer-cable-insertion-point#8 (silkscreen rect/circle/line shells count toward insertion-side bounds),
 circuit-json-to-bpc#12 (net labels without optional `anchor_position` convert instead of throwing),
-check-shorts#55 (unrouted `pcb_trace` entries that omit `route` no longer crash short detection).
+check-shorts#55 (unrouted `pcb_trace` entries that omit `route` no longer crash short detection),
+via-drill-guide-generator#1 (pill/oval/rect drills with `hole_width`/`hole_height` are cut instead of dropped).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
