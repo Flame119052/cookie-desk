@@ -114,7 +114,8 @@ biscuit-boards#112 (LightBurn `Rect`/`Ellipse` primitives convert to paths befor
 via-stitch-solver#7 (`pcb_keepout` rect/circle/outline regions block stitching vias),
 extract-srj-region#1 (unrouted traces that omit `route` extract instead of throwing),
 jscad-to-step#15 (empty/2D rendered `geometries` convert instead of throwing),
-minicssgrid#14 (array `gridTemplateRows`/`gridTemplateColumns` layout instead of dropping tracks).
+minicssgrid#14 (array `gridTemplateRows`/`gridTemplateColumns` layout instead of dropping tracks),
+generate-fpc-cable#1 (out-and-back paths keep frames instead of throwing on a zero tangent).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
