@@ -108,7 +108,8 @@ jscad-to-gltf#16 (empty geom2/geom3 siblings are skipped instead of failing the 
 specctra-dsn-json#16 (Specctra `qarc` keepouts/padstacks/wires parse instead of throwing),
 circuit-to-svg#718 (pinout/assembly NPTH `pill`/`rect`/`rotated_pill` holes are drawn instead of dropped),
 poppygl#37 (`TRIANGLE_STRIP`/`TRIANGLE_FAN` glTF primitives become draw calls instead of being skipped),
-easyeda-to-circuit-json#3 (schematic `PT`/`A` path and arc records emit `schematic_path` instead of unsupported-shape).
+easyeda-to-circuit-json#3 (schematic `PT`/`A` path and arc records emit `schematic_path` instead of unsupported-shape),
+circuit-to-canvas#285 (`pcb_keepout` `shape: "outline"` polygons hatch and two-point segments stroke instead of being dropped).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
