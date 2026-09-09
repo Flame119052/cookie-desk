@@ -112,7 +112,8 @@ easyeda-to-circuit-json#3 (schematic `PT`/`A` path and arc records emit `schemat
 circuit-to-canvas#285 (`pcb_keepout` `shape: "outline"` polygons hatch and two-point segments stroke instead of being dropped),
 biscuit-boards#112 (LightBurn `Rect`/`Ellipse` primitives convert to paths before lens distortion instead of throwing),
 via-stitch-solver#7 (`pcb_keepout` rect/circle/outline regions block stitching vias),
-extract-srj-region#1 (unrouted traces that omit `route` extract instead of throwing).
+extract-srj-region#1 (unrouted traces that omit `route` extract instead of throwing),
+jscad-to-step#15 (empty/2D rendered `geometries` convert instead of throwing).
 core#3768 adds a `require` export so stale CJS registry packages can load core
 (tscircuit/cli#3982). core#3769 sizes schematic boxes from displayed pin-label
 text so imported chips like RP2040 do not overlap inner labels.
